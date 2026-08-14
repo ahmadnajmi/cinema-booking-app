@@ -69,7 +69,7 @@ npx expo start
 ## Testing the Real-Time Flow
 
 1. Make sure the backend, Redis, Reverb (`php artisan reverb:start`), and the queue worker (`php artisan queue:work`) are all running
-2. Log in with a seeded test user (e.g. `test@example.com` / `password123`)
+2. Log in with a seeded test user (e.g. `test@example.com or test2@example.com` / `password`)
 3. Open the app in two browser tabs (or a browser + a simulator) and log in on both
 4. On tab A, tap a seat — it turns orange (locked)
 5. On tab B, the same seat updates to locked **instantly**, without refreshing — this confirms the Reverb WebSocket broadcast is working end to end
